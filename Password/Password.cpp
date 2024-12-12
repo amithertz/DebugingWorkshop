@@ -1,5 +1,11 @@
 #include <iostream>
 
+/*
+* if the password length is 16 characters you can breach into the system
+* for examle: aaaaaaaaaaaaaaaa
+* becasue we write 16 chars we have no space foe the end string symbol which strcmp relies on
+*/
+
 struct Password
 {
 	char value[16];
