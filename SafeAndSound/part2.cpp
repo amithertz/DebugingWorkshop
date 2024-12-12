@@ -11,6 +11,7 @@ char* safe_string_copy(char* dest, unsigned int destsize, char* src)
 	char* ret = dest;
 	for (unsigned int i = 0; i < srcsize * sizeof(*src); i++)
 		*dest++ = *src++;
+	*dest = '\0'; // added the endline symbol
 	return ret;
 }
 
